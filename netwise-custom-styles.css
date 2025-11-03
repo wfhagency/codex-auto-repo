@@ -1,0 +1,395 @@
+/**
+ * Netwise Website - Custom CSS
+ * Design System Styles for Elementor
+ *
+ * This file contains custom CSS classes for the Netwise design system
+ * Add this to Elementor > Custom CSS or to your theme's style.css
+ */
+
+/* ===== GRADIENT TEXT EFFECT ===== */
+.gradient-text {
+    background: linear-gradient(90deg, #7ED321 0%, #1926A0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: inline-block;
+}
+
+/* ===== SHADOWS ===== */
+
+/* Default Card Shadow */
+.card-default,
+.shadow-default {
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25),
+                0px 4px 4px 0px rgba(0,0,0,0.25);
+}
+
+/* Button Shadow */
+.btn-shadow {
+    box-shadow: -195px 290px 98px 0px rgba(0,0,0,0),
+                -125px 186px 90px 0px rgba(0,0,0,0.01),
+                -70px 105px 76px 0px rgba(0,0,0,0.05),
+                -31px 46px 56px 0px rgba(0,0,0,0.09),
+                -8px 12px 31px 0px rgba(0,0,0,0.1);
+}
+
+/* Elevated Card Shadow */
+.card-elevated,
+.shadow-elevated {
+    box-shadow: 0px 613px 172px 0px rgba(0,0,0,0),
+                0px 392px 157px 0px rgba(0,0,0,0.01),
+                0px 221px 132px 0px rgba(0,0,0,0.05),
+                0px 98px 98px 0px rgba(0,0,0,0.09),
+                0px 25px 54px 0px rgba(0,0,0,0.1);
+}
+
+/* ===== BLEND MODES ===== */
+.blend-color-dodge {
+    mix-blend-mode: color-dodge;
+    opacity: 0.3;
+}
+
+/* ===== HOVER EFFECTS ===== */
+
+/* Card Hover Effect */
+.card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 20px 60px rgba(0,0,0,0.15);
+}
+
+/* Link Hover with Underline Animation */
+.link-hover {
+    position: relative;
+    transition: color 0.3s ease;
+    display: inline-block;
+}
+
+.link-hover:after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #7ED321;
+    transition: width 0.3s ease;
+}
+
+.link-hover:hover:after {
+    width: 100%;
+}
+
+/* Link with Border Bottom */
+.link-border-bottom {
+    border-bottom: 2px solid currentColor;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    transition: border-color 0.3s ease;
+}
+
+.link-border-bottom:hover {
+    border-bottom-color: #7ED321;
+}
+
+/* ===== SPACING UTILITIES ===== */
+.gap-small { gap: 8px; }
+.gap-medium { gap: 16px; }
+.gap-large { gap: 24px; }
+.gap-xl { gap: 32px; }
+.gap-xxl { gap: 40px; }
+.gap-xxxl { gap: 64px; }
+
+/* ===== BORDER RADIUS ===== */
+.radius-small { border-radius: 8px; }
+.radius-medium { border-radius: 16px; }
+.radius-large { border-radius: 40px; }
+.radius-full { border-radius: 100px; }
+
+/* ===== BUTTON STYLES ===== */
+
+/* Primary Button */
+.btn-primary {
+    background: #FFFFFF;
+    color: #262525;
+    padding: 16px 40px;
+    border-radius: 40px;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -0.48px;
+    line-height: 1.5;
+    text-transform: none;
+    box-shadow: -195px 290px 98px 0px rgba(0,0,0,0),
+                -125px 186px 90px 0px rgba(0,0,0,0.01),
+                -70px 105px 76px 0px rgba(0,0,0,0.05),
+                -31px 46px 56px 0px rgba(0,0,0,0.09),
+                -8px 12px 31px 0px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 20px 60px rgba(0,0,0,0.15);
+}
+
+/* Secondary Button (Outline) */
+.btn-secondary {
+    background: transparent;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    padding: 16px 40px;
+    border-radius: 40px;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -0.48px;
+    line-height: 1.5;
+    text-transform: none;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background: #FFFFFF;
+    color: #262525;
+}
+
+/* Small Button (Navigation) */
+.btn-small {
+    background: #FFFFFF;
+    color: #262525;
+    padding: 16px 24px;
+    border-radius: 40px;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: -0.32px;
+    text-transform: uppercase;
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25),
+                0px 4px 4px 0px rgba(0,0,0,0.25);
+    transition: all 0.3s ease;
+}
+
+.btn-small:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.3);
+}
+
+/* ===== BADGE STYLES ===== */
+
+/* Category Badge */
+.badge {
+    background: #DEDEEC;
+    padding: 4px 12px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -0.4px;
+    display: inline-block;
+}
+
+/* Top Article Badge with Dot */
+.badge-top {
+    background: #262525;
+    color: #FFFFFF;
+    padding: 4px 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.badge-top::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #FF0000;
+}
+
+/* ===== TAB STYLES ===== */
+
+/* Pill Tab Container */
+.tabs-pill-container {
+    background: #DEDEEC;
+    border-radius: 100px;
+    padding: 8px;
+    display: inline-flex;
+    gap: 16px;
+}
+
+/* Pill Tab Item */
+.tab-pill {
+    padding: 16px 64px;
+    border-radius: 100px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #262525;
+    background: transparent;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.tab-pill.active,
+.tab-pill:hover {
+    background: #7ED321;
+}
+
+/* ===== CARD STYLES ===== */
+
+/* Default Card */
+.card {
+    background: #FFFFFF;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25),
+                0px 4px 4px 0px rgba(0,0,0,0.25);
+}
+
+/* Small Card */
+.card-small {
+    background: #FFFFFF;
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25),
+                0px 4px 4px 0px rgba(0,0,0,0.25);
+}
+
+/* Large Card */
+.card-large {
+    background: #FFFFFF;
+    padding: 64px 40px;
+    border-radius: 16px;
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25),
+                0px 4px 4px 0px rgba(0,0,0,0.25);
+}
+
+/* Product Card */
+.product-card {
+    background: #FFFFFF;
+    padding: 32px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100%;
+}
+
+/* ===== LOGO STYLES ===== */
+
+/* Logo Container in Carousel */
+.logo-container {
+    background: #FFFFFF;
+    height: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.logo-container img {
+    filter: grayscale(100%);
+    transition: all 0.3s ease;
+    max-height: 100%;
+    width: auto;
+}
+
+.logo-container:hover img {
+    filter: grayscale(0%);
+    transform: scale(1.05);
+}
+
+/* ===== HELPER CLASSES ===== */
+
+/* Text Utilities */
+.text-uppercase { text-transform: uppercase; }
+.text-italic { font-style: italic; }
+.text-bold { font-weight: 700; }
+.text-medium { font-weight: 500; }
+
+/* Color Utilities */
+.text-primary { color: #1926A0; }
+.text-nero { color: #262525; }
+.text-accent { color: #7ED321; }
+.text-white { color: #FFFFFF; }
+
+.bg-primary { background-color: #1926A0; }
+.bg-pastel { background-color: #DEDEEC; }
+.bg-background { background-color: #F6F6FE; }
+.bg-white { background-color: #FFFFFF; }
+
+/* Spacing Utilities */
+.mt-120 { margin-top: 120px; }
+.mb-40 { margin-bottom: 40px; }
+.mb-24 { margin-bottom: 24px; }
+
+/* Container Max-Width */
+.container-content {
+    max-width: 1504px;
+    margin: 0 auto;
+    padding: 0 112px;
+}
+
+/* ===== RESPONSIVE STYLES ===== */
+
+@media (max-width: 1024px) {
+    .container-content {
+        padding: 0 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .btn-primary,
+    .btn-secondary {
+        font-size: 18px;
+        padding: 12px 32px;
+    }
+
+    .container-content {
+        padding: 0 20px;
+    }
+
+    .tab-pill {
+        padding: 12px 32px;
+        font-size: 18px;
+    }
+}
+
+/* ===== ANIMATIONS ===== */
+
+/* Fade In Up */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in-up {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* Scale In */
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.animate-scale-in {
+    animation: scaleIn 0.4s ease-out;
+}

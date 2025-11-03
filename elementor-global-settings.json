@@ -1,0 +1,434 @@
+{
+  "version": "1.0.0",
+  "title": "Netwise Global Settings - Editable in Elementor",
+  "description": "Complete Elementor Kit with all global colors, typography, and button styles. All settings are fully editable in Elementor Theme Builder.",
+
+  "global_colors": {
+    "description": "Import these colors via Elementor > Site Settings > Global Colors",
+    "colors": [
+      {
+        "id": "primary",
+        "title": "Primary - Dark Seashore Night",
+        "color": "#1926A0"
+      },
+      {
+        "id": "secondary",
+        "title": "Accent - Thick Green",
+        "color": "#7ED321"
+      },
+      {
+        "id": "text",
+        "title": "Text - Nero",
+        "color": "#262525"
+      },
+      {
+        "id": "accent",
+        "title": "Background - Light Purple",
+        "color": "#F6F6FE"
+      },
+      {
+        "id": "pastel",
+        "title": "Pastel Eyeshadow",
+        "color": "#DEDEEC"
+      },
+      {
+        "id": "white",
+        "title": "White",
+        "color": "#FFFFFF"
+      }
+    ]
+  },
+
+  "global_fonts": {
+    "description": "Import these typography settings via Elementor > Site Settings > Global Fonts",
+    "font_family": "Montserrat",
+    "google_fonts": true,
+    "weights": ["400", "500", "700"],
+    "styles": ["normal", "italic"],
+
+    "typography_presets": [
+      {
+        "id": "primary",
+        "title": "Primary (Paragraph)",
+        "font_family": "Montserrat",
+        "font_size": {
+          "desktop": "20px",
+          "tablet": "18px",
+          "mobile": "18px"
+        },
+        "font_weight": "500",
+        "line_height": "1.6",
+        "letter_spacing": "-0.8px"
+      },
+      {
+        "id": "secondary",
+        "title": "Secondary (Bold Text)",
+        "font_family": "Montserrat",
+        "font_size": {
+          "desktop": "20px",
+          "tablet": "18px",
+          "mobile": "18px"
+        },
+        "font_weight": "700",
+        "line_height": "1.6",
+        "letter_spacing": "-0.8px"
+      },
+      {
+        "id": "text",
+        "title": "Body Text",
+        "font_family": "Montserrat",
+        "font_size": {
+          "desktop": "20px",
+          "tablet": "18px",
+          "mobile": "18px"
+        },
+        "font_weight": "500",
+        "line_height": "1.6",
+        "letter_spacing": "-0.8px"
+      },
+      {
+        "id": "accent",
+        "title": "Accent (Headings)",
+        "font_family": "Montserrat",
+        "font_size": {
+          "desktop": "32px",
+          "tablet": "28px",
+          "mobile": "24px"
+        },
+        "font_weight": "700",
+        "line_height": "1.5",
+        "letter_spacing": "-0.64px"
+      }
+    ]
+  },
+
+  "custom_typography": {
+    "description": "Create these as Custom Typography in Elementor > Site Settings > Typography",
+    "headings": {
+      "h1": {
+        "desktop": {
+          "font_size": "80px",
+          "font_weight": "700",
+          "line_height": "1.1",
+          "letter_spacing": "-4px"
+        },
+        "tablet": {
+          "font_size": "56px",
+          "font_weight": "700",
+          "line_height": "1.2",
+          "letter_spacing": "-2.8px"
+        },
+        "mobile": {
+          "font_size": "40px",
+          "font_weight": "700",
+          "line_height": "1.2",
+          "letter_spacing": "-2px"
+        }
+      },
+      "h2": {
+        "desktop": {
+          "font_size": "64px",
+          "font_weight": "700",
+          "line_height": "1.3",
+          "letter_spacing": "-3.2px"
+        },
+        "tablet": {
+          "font_size": "48px",
+          "font_weight": "700",
+          "line_height": "1.3",
+          "letter_spacing": "-2.4px"
+        },
+        "mobile": {
+          "font_size": "40px",
+          "font_weight": "700",
+          "line_height": "1.3",
+          "letter_spacing": "-2px"
+        }
+      },
+      "h3": {
+        "desktop": {
+          "font_size": "48px",
+          "font_weight": "700",
+          "line_height": "1.4",
+          "letter_spacing": "-0.96px"
+        },
+        "tablet": {
+          "font_size": "40px",
+          "font_weight": "700",
+          "line_height": "1.4",
+          "letter_spacing": "-0.8px"
+        },
+        "mobile": {
+          "font_size": "32px",
+          "font_weight": "700",
+          "line_height": "1.4",
+          "letter_spacing": "-0.64px"
+        }
+      },
+      "h4": {
+        "desktop": {
+          "font_size": "32px",
+          "font_weight": "700",
+          "line_height": "1.5",
+          "letter_spacing": "-0.64px"
+        },
+        "tablet": {
+          "font_size": "28px",
+          "font_weight": "700",
+          "line_height": "1.5",
+          "letter_spacing": "-0.56px"
+        },
+        "mobile": {
+          "font_size": "24px",
+          "font_weight": "700",
+          "line_height": "1.5",
+          "letter_spacing": "-0.48px"
+        }
+      },
+      "h5": {
+        "desktop": {
+          "font_size": "24px",
+          "font_weight": "700",
+          "line_height": "1.5",
+          "letter_spacing": "-0.48px"
+        },
+        "mobile": {
+          "font_size": "20px",
+          "font_weight": "700",
+          "line_height": "1.5",
+          "letter_spacing": "-0.4px"
+        }
+      },
+      "h6": {
+        "desktop": {
+          "font_size": "20px",
+          "font_weight": "700",
+          "line_height": "1.6",
+          "letter_spacing": "-0.4px"
+        },
+        "mobile": {
+          "font_size": "18px",
+          "font_weight": "700",
+          "line_height": "1.6",
+          "letter_spacing": "-0.36px"
+        }
+      }
+    },
+    "body": {
+      "paragraph": {
+        "desktop": {
+          "font_size": "20px",
+          "font_weight": "500",
+          "line_height": "1.6",
+          "letter_spacing": "-0.8px"
+        },
+        "mobile": {
+          "font_size": "18px",
+          "font_weight": "500",
+          "line_height": "1.6",
+          "letter_spacing": "-0.72px"
+        }
+      },
+      "small_text": {
+        "desktop": {
+          "font_size": "18px",
+          "font_weight": "500",
+          "line_height": "1.1",
+          "letter_spacing": "-0.9px"
+        },
+        "mobile": {
+          "font_size": "16px",
+          "font_weight": "500",
+          "line_height": "1.1",
+          "letter_spacing": "-0.8px"
+        }
+      }
+    },
+    "special": {
+      "button_text": {
+        "desktop": {
+          "font_size": "24px",
+          "font_weight": "700",
+          "line_height": "1.5",
+          "letter_spacing": "-0.48px"
+        },
+        "mobile": {
+          "font_size": "18px",
+          "font_weight": "700",
+          "line_height": "1.5",
+          "letter_spacing": "-0.36px"
+        }
+      },
+      "navigation": {
+        "font_size": "16px",
+        "font_weight": "700",
+        "line_height": "normal",
+        "letter_spacing": "-0.32px",
+        "text_transform": "uppercase"
+      }
+    }
+  },
+
+  "button_styles": {
+    "description": "Configure these button styles in each Button widget or save as Global Widget",
+    "primary_button": {
+      "name": "Primary Button (White)",
+      "typography": {
+        "font_family": "Montserrat",
+        "font_size": {
+          "desktop": "24px",
+          "mobile": "18px"
+        },
+        "font_weight": "700",
+        "letter_spacing": "-0.48px",
+        "line_height": "1.5"
+      },
+      "style": {
+        "background_color": "#FFFFFF",
+        "text_color": "#262525",
+        "border_radius": "40px",
+        "padding": {
+          "desktop": "16px 40px",
+          "mobile": "12px 32px"
+        },
+        "box_shadow": {
+          "horizontal": "-8px",
+          "vertical": "12px",
+          "blur": "31px",
+          "spread": "0px",
+          "color": "rgba(0,0,0,0.1)"
+        }
+      },
+      "hover": {
+        "background_color": "#7ED321",
+        "text_color": "#262525",
+        "transform": "translateY(-2px)",
+        "box_shadow_blur": "60px"
+      }
+    },
+    "secondary_button": {
+      "name": "Secondary Button (Outline)",
+      "typography": {
+        "font_family": "Montserrat",
+        "font_size": {
+          "desktop": "24px",
+          "mobile": "18px"
+        },
+        "font_weight": "700",
+        "letter_spacing": "-0.48px",
+        "line_height": "1.5"
+      },
+      "style": {
+        "background_color": "transparent",
+        "text_color": "#FFFFFF",
+        "border": {
+          "width": "2px",
+          "style": "solid",
+          "color": "#FFFFFF"
+        },
+        "border_radius": "40px",
+        "padding": {
+          "desktop": "16px 40px",
+          "mobile": "12px 32px"
+        }
+      },
+      "hover": {
+        "background_color": "#FFFFFF",
+        "text_color": "#262525",
+        "border_color": "#FFFFFF"
+      }
+    },
+    "cta_button_small": {
+      "name": "CTA Button Small (Header)",
+      "typography": {
+        "font_family": "Montserrat",
+        "font_size": "16px",
+        "font_weight": "700",
+        "letter_spacing": "-0.32px",
+        "text_transform": "uppercase"
+      },
+      "style": {
+        "background_color": "#FFFFFF",
+        "text_color": "#262525",
+        "border_radius": "40px",
+        "padding": "16px 24px",
+        "box_shadow": {
+          "horizontal": "0px",
+          "vertical": "4px",
+          "blur": "4px",
+          "spread": "0px",
+          "color": "rgba(0,0,0,0.25)"
+        }
+      },
+      "hover": {
+        "background_color": "#7ED321",
+        "transform": "translateY(-2px)",
+        "box_shadow_vertical": "8px",
+        "box_shadow_blur": "16px"
+      }
+    }
+  },
+
+  "spacing_system": {
+    "description": "Use these spacing values in Elementor controls",
+    "container_width": "1728px",
+    "content_width": "1504px",
+    "side_margins": "112px",
+    "section_padding": {
+      "desktop": {
+        "top": "80px",
+        "bottom": "80px"
+      },
+      "mobile": {
+        "top": "40px",
+        "bottom": "40px"
+      }
+    },
+    "gaps": {
+      "small": "8px",
+      "medium": "16px",
+      "large": "24px",
+      "xl": "32px",
+      "xxl": "40px",
+      "xxxl": "64px"
+    }
+  },
+
+  "border_radius": {
+    "description": "Standard border radius values",
+    "small": "8px",
+    "medium": "16px",
+    "large": "40px",
+    "full": "100px"
+  },
+
+  "shadows": {
+    "description": "Box shadow presets - copy these values into Elementor shadow controls",
+    "card_default": "0px 4px 4px 0px rgba(0,0,0,0.25)",
+    "card_elevated": "0px 25px 54px 0px rgba(0,0,0,0.1), 0px 98px 98px 0px rgba(0,0,0,0.09), 0px 221px 132px 0px rgba(0,0,0,0.05)",
+    "button": "-8px 12px 31px 0px rgba(0,0,0,0.1)"
+  },
+
+  "gradients": {
+    "description": "Gradient presets for backgrounds and text",
+    "text_gradient": {
+      "type": "linear",
+      "angle": "90deg",
+      "colors": [
+        {
+          "color": "#7ED321",
+          "position": "0%"
+        },
+        {
+          "color": "#1926A0",
+          "position": "100%"
+        }
+      ],
+      "note": "Use with Background > Gradient, then enable 'Background Clip: Text' in Advanced tab"
+    },
+    "hero_background": {
+      "type": "custom",
+      "note": "Use background image with color overlays and blend modes"
+    }
+  }
+}

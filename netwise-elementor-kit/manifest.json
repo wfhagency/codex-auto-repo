@@ -1,0 +1,27 @@
+{
+  "name": "Netwise Design System Kit",
+  "description": "Complete Elementor Kit for Netwise Website with global colors, typography, and design system settings",
+  "version": "1.0.0",
+  "author": "Netwise",
+  "thumbnail": "",
+  "screenshot": "",
+  "plugins": {
+    "elementor": {
+      "version": "3.16.0"
+    },
+    "elementor-pro": {
+      "version": "3.16.0"
+    }
+  },
+  "templates": [],
+  "content": [],
+  "site-settings": "site-settings.json",
+  "wp-content": [],
+  "settings": {
+    "page_on_front_type": "",
+    "page_on_front": "",
+    "page_for_posts": ""
+  },
+  "elementor_version": "3.16.0",
+  "export_date": "2025-11-03"
+}

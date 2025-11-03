@@ -6,9 +6,14 @@ Kompletny pakiet do zbudowania strony Netwise w WordPress + Elementor z **w peł
 
 ```
 📁 codex-auto-repo/
+├── 📦 netwise-elementor-kit.zip (⭐ GOTOWY KIT DO IMPORTU)
+├── 📁 netwise-elementor-kit/
+│   ├── manifest.json
+│   ├── site-settings.json
+│   └── README.txt
 ├── 📄 README.md (ten plik)
 ├── 📄 NETWISE_HOMEPAGE_ELEMENTOR_SPEC.md (szczegółowa specyfikacja designu)
-├── 📄 ELEMENTOR-SETUP-GUIDE.md (👈 ZACZNIJ TUTAJ - kompletny przewodnik konfiguracji)
+├── 📄 ELEMENTOR-SETUP-GUIDE.md (👈 kompletny przewodnik konfiguracji)
 ├── 📄 elementor-global-settings.json (dane do ręcznej konfiguracji)
 ├── 📄 elementor-kit-netwise.json (plik konfiguracyjny - dla zaawansowanych)
 └── 📄 netwise-custom-styles.css (opcjonalne dodatkowe style CSS)
@@ -16,7 +21,33 @@ Kompletny pakiet do zbudowania strony Netwise w WordPress + Elementor z **w peł
 
 ---
 
-## 🚀 Szybki Start
+## ⚡ SZYBKA INSTALACJA (1-Click Import)
+
+### Opcja A: Import Kitu do Elementor (Najszybsza) ⭐
+
+**Pobierz i zaimportuj gotowy kit:**
+
+1. **Pobierz:** `netwise-elementor-kit.zip` (4KB)
+2. **WordPress Admin** → **Elementor** → **Tools**
+3. Kliknij zakładkę **"Import Kit"**
+4. **Choose File** → wybierz `netwise-elementor-kit.zip`
+5. Kliknij **"Import"**
+6. ✅ **Gotowe!** Wszystkie globalne kolory i czcionki są skonfigurowane!
+
+**Co zostanie zaimportowane:**
+- ✓ 6 Global Colors (edytowalne w Elementor)
+- ✓ 10 Custom Typography presets
+- ✓ 4 System Typography styles
+- ✓ Container settings (1728px)
+- ✓ Custom CSS classes
+
+**Po imporcie:**
+- Wszystkie kolory dostępne w: `Elementor → Site Settings → Global Colors`
+- Wszystkie fonty dostępne w: `Elementor → Site Settings → Global Fonts`
+
+---
+
+## 🚀 Alternatywna Instalacja (Ręczna)
 
 ### Krok 1: Zainstaluj WordPress i Wtyczki
 
@@ -28,31 +59,54 @@ Kompletny pakiet do zbudowania strony Netwise w WordPress + Elementor z **w peł
 - The Plus Addons for Elementor
 - Essential Addons for Elementor
 
-### Krok 2: Otwórz Przewodnik Konfiguracji
+### Opcja B: Konfiguracja Ręczna (Krok po kroku)
+
+Jeśli wolisz ręczną konfigurację lub import kitu nie działa:
 
 **👉 Otwórz plik: [`ELEMENTOR-SETUP-GUIDE.md`](ELEMENTOR-SETUP-GUIDE.md)**
 
-Ten plik zawiera **kompletne instrukcje krok po kroku**, jak:
-1. Skonfigurować Global Colors (wszystkie kolory edytowalne w Elementor)
-2. Skonfigurować Global Fonts (wszystkie czcionki edytowalne w Elementor)
+Ten przewodnik zawiera **kompletne instrukcje krok po kroku**, jak:
+1. Ręcznie skonfigurować Global Colors (6 kolorów)
+2. Ręcznie skonfigurować Global Fonts (Montserrat)
 3. Skonfigurować Theme Style (H1-H6, Body, Links)
-4. Stworzyć Button Presety (buttony edytowalne globalnie)
-5. Zbudować każdą sekcję Homepage
+4. Stworzyć Button Presety (3 globalne buttony)
+5. Zbudować każdą z 13 sekcji Homepage
 
-### Krok 3: Postępuj Zgodnie z Instrukcjami
-
-Przewodnik przeprowadzi Cię przez:
-- ✅ Konfigurację 6 globalnych kolorów
-- ✅ Konfigurację wszystkich fontów (Montserrat)
-- ✅ Stworzenie 3 globalnych buttonów
-- ✅ Budowę 13 sekcji Homepage
-- ✅ Edycję stylów w panelu Elementor (bez CSS!)
+**Przewodnik przeprowadzi Cię przez:**
+- ✅ Konfigurację 6 globalnych kolorów (w panelu Elementor)
+- ✅ Konfigurację wszystkich fontów (Montserrat z Google Fonts)
+- ✅ Stworzenie 3 globalnych buttonów (edytowalnych)
+- ✅ Budowę 13 sekcji Homepage (szczegółowe instrukcje)
+- ✅ Edycję stylów w panelu Elementor (bez pisania CSS!)
 
 ---
 
 ## 📖 Opis Plików
 
-### 1. `ELEMENTOR-SETUP-GUIDE.md` ⭐ GŁÓWNY PRZEWODNIK
+### 1. `netwise-elementor-kit.zip` ⭐ GOTOWY KIT DO IMPORTU
+**Dla kogo:** Wszyscy - najszybszy sposób instalacji
+
+**Co zawiera:**
+- `manifest.json` - Metadane kitu (nazwa, wersja, wymagania)
+- `site-settings.json` - Kompletna konfiguracja Global Colors, Typography, Container settings
+- `README.txt` - Instrukcje instalacji i użycia
+
+**Jak użyć:**
+1. Elementor → Tools → Import Kit
+2. Wybierz plik `netwise-elementor-kit.zip`
+3. Kliknij Import
+4. ✅ Gotowe! Wszystkie globalne ustawienia zaimportowane
+
+**Co zostanie zaimportowane:**
+- 6 Global Colors (Primary, Accent, Text, Background, Pastel, White)
+- 10 Custom Typography presets (H1-H6, Paragraph, Button, Navigation, Small Text)
+- 4 System Typography styles
+- Container width (1728px)
+- Custom CSS classes (gradient-text, card-elevated, btn-shadow, itp.)
+
+**👉 To jest najszybszy i najprostszy sposób instalacji!**
+
+### 2. `ELEMENTOR-SETUP-GUIDE.md` ⭐ GŁÓWNY PRZEWODNIK
 **Dla kogo:** Każdy, kto będzie budował stronę
 
 **Co zawiera:**
@@ -64,7 +118,7 @@ Przewodnik przeprowadzi Cię przez:
 
 **👉 Wszystko w tym pliku jest edytowalne w panelu Elementor!**
 
-### 2. `NETWISE_HOMEPAGE_ELEMENTOR_SPEC.md`
+### 3. `NETWISE_HOMEPAGE_ELEMENTOR_SPEC.md`
 **Dla kogo:** Developerzy i designerzy
 
 **Co zawiera:**
@@ -74,7 +128,7 @@ Przewodnik przeprowadzi Cię przez:
 - Wartości kolorów, fontów, spacing
 - Checklistę implementacji (20 faz)
 
-### 3. `elementor-global-settings.json`
+### 4. `elementor-global-settings.json`
 **Dla kogo:** Developerzy
 
 **Co zawiera:**
@@ -86,7 +140,7 @@ Przewodnik przeprowadzi Cię przez:
 
 **Uwaga:** Ten plik to **referencja danych**. Nie importujesz go bezpośrednio - użyj instrukcji z `ELEMENTOR-SETUP-GUIDE.md`, aby wprowadzić te wartości przez panel Elementor.
 
-### 4. `elementor-kit-netwise.json`
+### 5. `elementor-kit-netwise.json`
 **Dla kogo:** Zaawansowani użytkownicy
 
 **Co zawiera:**
@@ -95,7 +149,7 @@ Przewodnik przeprowadzi Cię przez:
 
 **Uwaga:** Elementor nie ma pełnego API do importu globalnych ustawień, dlatego **zalecamy ręczną konfigurację** według `ELEMENTOR-SETUP-GUIDE.md`.
 
-### 5. `netwise-custom-styles.css`
+### 6. `netwise-custom-styles.css`
 **Dla kogo:** Opcjonalne
 
 **Co zawiera:**

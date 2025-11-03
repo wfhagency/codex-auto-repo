@@ -1,0 +1,421 @@
+{
+  "settings": {
+    "system_colors": [
+      {
+        "_id": "primary",
+        "title": "Primary - Dark Seashore Night",
+        "color": "#1926A0"
+      },
+      {
+        "_id": "secondary",
+        "title": "Accent - Thick Green",
+        "color": "#7ED321"
+      },
+      {
+        "_id": "text",
+        "title": "Text - Nero",
+        "color": "#262525"
+      },
+      {
+        "_id": "accent",
+        "title": "Background - Light Purple",
+        "color": "#F6F6FE"
+      }
+    ],
+    "custom_colors": [
+      {
+        "_id": "pastel",
+        "title": "Pastel Eyeshadow",
+        "color": "#DEDEEC"
+      },
+      {
+        "_id": "white",
+        "title": "White",
+        "color": "#FFFFFF"
+      }
+    ],
+    "system_typography": [
+      {
+        "_id": "primary",
+        "title": "Primary",
+        "typography_typography": "custom",
+        "typography_font_family": "Montserrat",
+        "typography_font_weight": "500",
+        "typography_font_size": {
+          "unit": "px",
+          "size": 20,
+          "sizes": {
+            "mobile": 18
+          }
+        },
+        "typography_line_height": {
+          "unit": "em",
+          "size": 1.6
+        },
+        "typography_letter_spacing": {
+          "unit": "px",
+          "size": -0.8
+        }
+      },
+      {
+        "_id": "secondary",
+        "title": "Secondary",
+        "typography_typography": "custom",
+        "typography_font_family": "Montserrat",
+        "typography_font_weight": "700",
+        "typography_font_size": {
+          "unit": "px",
+          "size": 20,
+          "sizes": {
+            "mobile": 18
+          }
+        },
+        "typography_line_height": {
+          "unit": "em",
+          "size": 1.6
+        },
+        "typography_letter_spacing": {
+          "unit": "px",
+          "size": -0.8
+        }
+      },
+      {
+        "_id": "text",
+        "title": "Text",
+        "typography_typography": "custom",
+        "typography_font_family": "Montserrat",
+        "typography_font_weight": "500",
+        "typography_font_size": {
+          "unit": "px",
+          "size": 20,
+          "sizes": {
+            "mobile": 18
+          }
+        },
+        "typography_line_height": {
+          "unit": "em",
+          "size": 1.6
+        },
+        "typography_letter_spacing": {
+          "unit": "px",
+          "size": -0.8
+        }
+      },
+      {
+        "_id": "accent",
+        "title": "Accent",
+        "typography_typography": "custom",
+        "typography_font_family": "Montserrat",
+        "typography_font_weight": "700",
+        "typography_font_size": {
+          "unit": "px",
+          "size": 32,
+          "sizes": {
+            "tablet": 28,
+            "mobile": 24
+          }
+        },
+        "typography_line_height": {
+          "unit": "em",
+          "size": 1.5
+        },
+        "typography_letter_spacing": {
+          "unit": "px",
+          "size": -0.64
+        }
+      }
+    ],
+    "custom_typography": [
+      {
+        "_id": "hero_heading",
+        "title": "Hero Heading (H1)",
+        "typography_typography": "custom",
+        "typography_font_family": "Montserrat",
+        "typography_font_weight": "700",
+        "typography_font_size": {
+          "unit": "px",
+          "size": 80,
+          "sizes": {
+            "tablet": 56,
+            "mobile": 40
+          }
+        },
+        "typography_line_height": {
+          "unit": "em",
+          "size": 1.1
+        },
+        "typography_letter_spacing": {
+          "unit": "px",
+          "size": -4,
+          "sizes": {
+            "tablet": -2.8,
+            "mobile": -2
+          }
+        }
+      },
+      {
+        "_id": "h2_desktop",
+        "title": "H2 Desktop",
+        "typography_typography": "custom",
+        "typography_font_family": "Montserrat",
+        "typography_font_weight": "700",
+        "typography_font_size": {
+          "unit": "px",
+          "size": 64,
+          "sizes": {
+            "tablet": 48,
+            "mobile": 40
+          }
+        },
+        "typography_line_height": {
+          "unit": "em",
+          "size": 1.3
+        },
+        "typography_letter_spacing": {
+          "unit": "px",
+          "size": -3.2,
+          "sizes": {
+            "tablet": -2.4,
+            "mobile": -2
+          }
+        }
+      },
+      {
+        "_id": "h3_desktop",
+        "title": "H3 Desktop",
+        "typography_typography": "custom",
+        "typography_font_family": "Montserrat",
+        "typography_font_weight": "700",
+        "typography_font_size": {
+          "unit": "px",
+          "size": 48,
+          "sizes": {
+            "tablet": 40,
+            "mobile": 32
+          }
+        },
+        "typography_line_height": {
+          "unit": "em",
+          "size": 1.4
+        },
+        "typography_letter_spacing": {
+          "unit": "px",
+          "size": -0.96,
+          "sizes": {
+            "tablet": -0.8,
+            "mobile": -0.64
+          }
+        }
+      },
+      {
+        "_id": "h4_desktop",
+        "title": "H4 Desktop",
+        "typography_typography": "custom",
+        "typography_font_family": "Montserrat",
+        "typography_font_weight": "700",
+        "typography_font_size": {
+          "unit": "px",
+          "size": 32,
+          "sizes": {
+            "tablet": 28,
+            "mobile": 24
+          }
+        },
+        "typography_line_height": {
+          "unit": "em",
+          "size": 1.5
+        },
+        "typography_letter_spacing": {
+          "unit": "px",
+          "size": -0.64,
+          "sizes": {
+            "tablet": -0.56,
+            "mobile": -0.48
+          }
+        }
+      },
+      {
+        "_id": "h5",
+        "title": "H5",
+        "typography_typography": "custom",
+        "typography_font_family": "Montserrat",
+        "typography_font_weight": "700",
+        "typography_font_size": {
+          "unit": "px",
+          "size": 24,
+          "sizes": {
+            "mobile": 20
+          }
+        },
+        "typography_line_height": {
+          "unit": "em",
+          "size": 1.5
+        },
+        "typography_letter_spacing": {
+          "unit": "px",
+          "size": -0.48,
+          "sizes": {
+            "mobile": -0.4
+          }
+        }
+      },
+      {
+        "_id": "h6",
+        "title": "H6",
+        "typography_typography": "custom",
+        "typography_font_family": "Montserrat",
+        "typography_font_weight": "700",
+        "typography_font_size": {
+          "unit": "px",
+          "size": 20,
+          "sizes": {
+            "mobile": 18
+          }
+        },
+        "typography_line_height": {
+          "unit": "em",
+          "size": 1.6
+        },
+        "typography_letter_spacing": {
+          "unit": "px",
+          "size": -0.4,
+          "sizes": {
+            "mobile": -0.36
+          }
+        }
+      },
+      {
+        "_id": "paragraph",
+        "title": "Paragraph",
+        "typography_typography": "custom",
+        "typography_font_family": "Montserrat",
+        "typography_font_weight": "500",
+        "typography_font_size": {
+          "unit": "px",
+          "size": 20,
+          "sizes": {
+            "mobile": 18
+          }
+        },
+        "typography_line_height": {
+          "unit": "em",
+          "size": 1.6
+        },
+        "typography_letter_spacing": {
+          "unit": "px",
+          "size": -0.8,
+          "sizes": {
+            "mobile": -0.72
+          }
+        }
+      },
+      {
+        "_id": "small_text",
+        "title": "Small Text",
+        "typography_typography": "custom",
+        "typography_font_family": "Montserrat",
+        "typography_font_weight": "500",
+        "typography_font_size": {
+          "unit": "px",
+          "size": 18,
+          "sizes": {
+            "mobile": 16
+          }
+        },
+        "typography_line_height": {
+          "unit": "em",
+          "size": 1.1
+        },
+        "typography_letter_spacing": {
+          "unit": "px",
+          "size": -0.9,
+          "sizes": {
+            "mobile": -0.8
+          }
+        }
+      },
+      {
+        "_id": "button_text",
+        "title": "Button Text",
+        "typography_typography": "custom",
+        "typography_font_family": "Montserrat",
+        "typography_font_weight": "700",
+        "typography_font_size": {
+          "unit": "px",
+          "size": 24,
+          "sizes": {
+            "mobile": 18
+          }
+        },
+        "typography_line_height": {
+          "unit": "em",
+          "size": 1.5
+        },
+        "typography_letter_spacing": {
+          "unit": "px",
+          "size": -0.48,
+          "sizes": {
+            "mobile": -0.36
+          }
+        }
+      },
+      {
+        "_id": "navigation",
+        "title": "Navigation",
+        "typography_typography": "custom",
+        "typography_font_family": "Montserrat",
+        "typography_font_weight": "700",
+        "typography_font_size": {
+          "unit": "px",
+          "size": 16
+        },
+        "typography_line_height": {
+          "unit": "em",
+          "size": 1
+        },
+        "typography_letter_spacing": {
+          "unit": "px",
+          "size": -0.32
+        },
+        "typography_text_transform": "uppercase"
+      }
+    ],
+    "default_generic_fonts": "Montserrat, sans-serif",
+    "container_width": {
+      "unit": "px",
+      "size": 1728
+    },
+    "space_between_widgets": {
+      "unit": "px",
+      "size": 20
+    },
+    "page_title_selector": "h1.entry-title",
+    "stretched_section_container": "",
+    "viewport_lg": 1025,
+    "viewport_md": 768,
+    "custom_css": ".gradient-text {\n    background: linear-gradient(90deg, #7ED321 0%, #1926A0 100%);\n    -webkit-background-clip: text;\n    -webkit-text-fill-color: transparent;\n    background-clip: text;\n    display: inline-block;\n}\n\n.card-default,\n.shadow-default {\n    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25),\n                0px 4px 4px 0px rgba(0,0,0,0.25);\n}\n\n.btn-shadow {\n    box-shadow: -195px 290px 98px 0px rgba(0,0,0,0),\n                -125px 186px 90px 0px rgba(0,0,0,0.01),\n                -70px 105px 76px 0px rgba(0,0,0,0.05),\n                -31px 46px 56px 0px rgba(0,0,0,0.09),\n                -8px 12px 31px 0px rgba(0,0,0,0.1);\n}\n\n.card-elevated,\n.shadow-elevated {\n    box-shadow: 0px 613px 172px 0px rgba(0,0,0,0),\n                0px 392px 157px 0px rgba(0,0,0,0.01),\n                0px 221px 132px 0px rgba(0,0,0,0.05),\n                0px 98px 98px 0px rgba(0,0,0,0.09),\n                0px 25px 54px 0px rgba(0,0,0,0.1);\n}\n\n.blend-color-dodge {\n    mix-blend-mode: color-dodge;\n    opacity: 0.3;\n}\n\n.card-hover {\n    transition: transform 0.3s ease, box-shadow 0.3s ease;\n}\n\n.card-hover:hover {\n    transform: translateY(-8px);\n    box-shadow: 0px 20px 60px rgba(0,0,0,0.15);\n}\n\n.link-hover {\n    position: relative;\n    transition: color 0.3s ease;\n    display: inline-block;\n}\n\n.link-hover:after {\n    content: '';\n    position: absolute;\n    bottom: -2px;\n    left: 0;\n    width: 0;\n    height: 2px;\n    background: #7ED321;\n    transition: width 0.3s ease;\n}\n\n.link-hover:hover:after {\n    width: 100%;\n}\n\n.link-border-bottom {\n    border-bottom: 2px solid currentColor;\n    display: inline-flex;\n    align-items: center;\n    gap: 8px;\n    text-decoration: none;\n    transition: border-color 0.3s ease;\n}\n\n.link-border-bottom:hover {\n    border-bottom-color: #7ED321;\n}",
+    "body_color": "#262525",
+    "body_typography": {
+      "typography_typography": "custom",
+      "typography_font_family": "Montserrat",
+      "typography_font_weight": "500",
+      "typography_font_size": {
+        "unit": "px",
+        "size": 20,
+        "sizes": {
+          "mobile": 18
+        }
+      },
+      "typography_line_height": {
+        "unit": "em",
+        "size": 1.6
+      },
+      "typography_letter_spacing": {
+        "unit": "px",
+        "size": -0.8
+      }
+    },
+    "link_color": "#262525",
+    "link_hover_color": "#7ED321"
+  }
+}

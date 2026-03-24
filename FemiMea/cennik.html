@@ -36,16 +36,12 @@
     <div class="top-bar">
         <div class="container top-bar__inner">
             <div class="top-bar__contact">
-                <a href="tel:+48533343046" class="top-bar__link">
-                    <i class="fas fa-phone-alt"></i> +48 533 343 046
-                </a>
-                <a href="mailto:kontakt@femimea.pl" class="top-bar__link">
-                    <i class="fas fa-envelope"></i> kontakt@femimea.pl
-                </a>
+                <a href="tel:+48533343046"><i class="fas fa-phone-alt"></i> +48 533 343 046</a>
+                <a href="mailto:kontakt@femimea.pl"><i class="fas fa-envelope"></i> kontakt@femimea.pl</a>
             </div>
             <div class="top-bar__social">
-                <a href="#" aria-label="Facebook" class="top-bar__social-link"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" aria-label="Instagram" class="top-bar__social-link"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
     </div>
@@ -54,24 +50,24 @@
     <header class="header" id="header">
         <div class="container header__inner">
             <a href="index.html" class="header__logo">
-                <img src="https://femimea.pl/wp-content/uploads/2022/11/femimea-logo.png" alt="FemiMea – Klinika zdrowia kobiet" width="180" height="48">
+                <img src="https://femimea.pl/wp-content/uploads/2022/11/femimea-logo.png" alt="FemiMea – Klinika zdrowia kobiet" width="180" height="44">
             </a>
 
             <button class="header__hamburger" id="navToggle" aria-label="Otwórz menu" aria-expanded="false">
                 <span></span><span></span><span></span>
             </button>
 
-            <nav class="header__nav" id="mainNav" aria-label="Nawigacja główna">
-                <ul class="header__menu">
-                    <li><a href="index.html" class="header__menu-link">Strona główna</a></li>
-                    <li><a href="o-nas.html" class="header__menu-link">O nas</a></li>
-                    <li><a href="oferta.html" class="header__menu-link">Oferta</a></li>
-                    <li><a href="personel.html" class="header__menu-link">Personel</a></li>
-                    <li><a href="cennik.html" class="header__menu-link active" aria-current="page">Cennik</a></li>
-                    <li><a href="blog.html" class="header__menu-link">Blog</a></li>
-                    <li><a href="kontakt.html" class="header__menu-link">Kontakt</a></li>
+            <nav class="header__nav" id="mainNav">
+                <ul class="header__nav-list">
+                    <li><a href="index.html">Strona główna</a></li>
+                    <li><a href="o-nas.html">O nas</a></li>
+                    <li><a href="oferta.html">Oferta</a></li>
+                    <li><a href="personel.html">Personel</a></li>
+                    <li><a href="cennik.html" class="active" aria-current="page">Cennik</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                    <li><a href="rejestracja.html" class="btn btn--primary btn--nav">Umów wizytę</a></li>
                 </ul>
-                <a href="rejestracja.html" class="btn btn--primary header__cta">Umów wizytę</a>
             </nav>
         </div>
     </header>
@@ -79,7 +75,7 @@
     <main>
 
         <!-- ===== HERO BANNER ===== -->
-        <section class="hero hero--subpage">
+        <section class="page-hero">
             <div class="container">
                 <nav class="breadcrumbs" aria-label="Ścieżka nawigacji">
                     <ol class="breadcrumbs__list" itemscope itemtype="https://schema.org/BreadcrumbList">
@@ -87,45 +83,45 @@
                             <a href="index.html" itemprop="item"><span itemprop="name">Strona główna</span></a>
                             <meta itemprop="position" content="1">
                         </li>
-                        <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                        <li class="breadcrumbs__item breadcrumbs__item--active" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
                             <span itemprop="name" aria-current="page">Cennik</span>
                             <meta itemprop="position" content="2">
                         </li>
                     </ol>
                 </nav>
-                <h1 class="hero__title">Cennik usług</h1>
-                <p class="hero__subtitle">Przejrzyste ceny wszystkich usług kliniki FemiMea</p>
+                <h1 class="page-hero__title">Cennik usług</h1>
+                <p class="page-hero__subtitle">Przejrzyste ceny wszystkich usług kliniki FemiMea</p>
             </div>
         </section>
 
         <!-- ===== PRICING SECTION ===== -->
-        <section class="pricing" id="cennik">
+        <section class="pricing-section" id="cennik">
             <div class="container">
 
                 <!-- Tab Navigation -->
-                <div class="tabs" role="tablist" aria-label="Kategorie usług">
-                    <button class="tabs__btn active" role="tab" aria-selected="true" aria-controls="panel-ginekologia" data-tab="ginekologia" id="tab-ginekologia">
+                <div class="tabs" data-tabs role="tablist" aria-label="Kategorie usług">
+                    <button class="tab-trigger" role="tab" aria-selected="true" aria-controls="panel-ginekologia" data-tab="ginekologia" id="tab-ginekologia">
                         <i class="fas fa-venus"></i> Ginekologia
                     </button>
-                    <button class="tabs__btn" role="tab" aria-selected="false" aria-controls="panel-estetyczna" data-tab="estetyczna" id="tab-estetyczna">
-                        <i class="fas fa-sparkles"></i> Ginekologia estetyczna
+                    <button class="tab-trigger" role="tab" aria-selected="false" aria-controls="panel-estetyczna" data-tab="estetyczna" id="tab-estetyczna">
+                        <i class="fas fa-star"></i> Ginekologia estetyczna
                     </button>
-                    <button class="tabs__btn" role="tab" aria-selected="false" aria-controls="panel-profilaktyka" data-tab="profilaktyka" id="tab-profilaktyka">
+                    <button class="tab-trigger" role="tab" aria-selected="false" aria-controls="panel-profilaktyka" data-tab="profilaktyka" id="tab-profilaktyka">
                         <i class="fas fa-shield-alt"></i> Profilaktyka
                     </button>
-                    <button class="tabs__btn" role="tab" aria-selected="false" aria-controls="panel-nieplodnosc" data-tab="nieplodnosc" id="tab-nieplodnosc">
+                    <button class="tab-trigger" role="tab" aria-selected="false" aria-controls="panel-nieplodnosc" data-tab="nieplodnosc" id="tab-nieplodnosc">
                         <i class="fas fa-heart"></i> Niepłodność
                     </button>
-                    <button class="tabs__btn" role="tab" aria-selected="false" aria-controls="panel-ciaza" data-tab="ciaza" id="tab-ciaza">
+                    <button class="tab-trigger" role="tab" aria-selected="false" aria-controls="panel-ciaza" data-tab="ciaza" id="tab-ciaza">
                         <i class="fas fa-baby"></i> Ciąża i poród
                     </button>
-                    <button class="tabs__btn" role="tab" aria-selected="false" aria-controls="panel-prenatalne" data-tab="prenatalne" id="tab-prenatalne">
+                    <button class="tab-trigger" role="tab" aria-selected="false" aria-controls="panel-prenatalne" data-tab="prenatalne" id="tab-prenatalne">
                         <i class="fas fa-dna"></i> Prenatalne
                     </button>
-                    <button class="tabs__btn" role="tab" aria-selected="false" aria-controls="panel-fizjoterapia" data-tab="fizjoterapia" id="tab-fizjoterapia">
+                    <button class="tab-trigger" role="tab" aria-selected="false" aria-controls="panel-fizjoterapia" data-tab="fizjoterapia" id="tab-fizjoterapia">
                         <i class="fas fa-hands-helping"></i> Fizjoterapia
                     </button>
-                    <button class="tabs__btn" role="tab" aria-selected="false" aria-controls="panel-inne" data-tab="inne" id="tab-inne">
+                    <button class="tab-trigger" role="tab" aria-selected="false" aria-controls="panel-inne" data-tab="inne" id="tab-inne">
                         <i class="fas fa-plus-circle"></i> Inne
                     </button>
                 </div>
@@ -133,8 +129,8 @@
                 <!-- ===== TAB PANELS ===== -->
 
                 <!-- GINEKOLOGIA -->
-                <div class="tabs__panel active" role="tabpanel" id="panel-ginekologia" aria-labelledby="tab-ginekologia" data-panel="ginekologia">
-                    <h2 class="tabs__panel-title">Ginekologia</h2>
+                <div class="tab-panel" role="tabpanel" id="panel-ginekologia" aria-labelledby="tab-ginekologia" data-tab-panel="ginekologia">
+                    <h2 class="tab-panel__title">Ginekologia</h2>
                     <div class="pricing-table">
                         <div class="pricing-table__header">
                             <span class="pricing-table__col pricing-table__col--service">Usługa</span>
@@ -144,54 +140,54 @@
                         <div class="pricing-table__row">
                             <span class="pricing-table__service">Konsultacja ginekologiczna</span>
                             <span class="pricing-table__price">od 250 zł</span>
-                            <a href="rejestracja.html" class="btn btn--sm btn--primary">Umów</a>
+                            <a href="rejestracja.html" class="btn btn--primary btn--sm">Umów</a>
                         </div>
                         <div class="pricing-table__row">
                             <span class="pricing-table__service">Konsultacja ginekologiczna z USG</span>
                             <span class="pricing-table__price">od 300 zł</span>
-                            <a href="rejestracja.html" class="btn btn--sm btn--primary">Umów</a>
+                            <a href="rejestracja.html" class="btn btn--primary btn--sm">Umów</a>
                         </div>
                         <div class="pricing-table__row">
                             <span class="pricing-table__service">USG ginekologiczne</span>
                             <span class="pricing-table__price">od 200 zł</span>
-                            <a href="rejestracja.html" class="btn btn--sm btn--primary">Umów</a>
+                            <a href="rejestracja.html" class="btn btn--primary btn--sm">Umów</a>
                         </div>
                         <div class="pricing-table__row">
                             <span class="pricing-table__service">USG piersi</span>
                             <span class="pricing-table__price">od 200 zł</span>
-                            <a href="rejestracja.html" class="btn btn--sm btn--primary">Umów</a>
+                            <a href="rejestracja.html" class="btn btn--primary btn--sm">Umów</a>
                         </div>
                         <div class="pricing-table__row">
                             <span class="pricing-table__service">Histeroskopia diagnostyczna</span>
                             <span class="pricing-table__price">od 2500 zł</span>
-                            <a href="rejestracja.html" class="btn btn--sm btn--primary">Umów</a>
+                            <a href="rejestracja.html" class="btn btn--primary btn--sm">Umów</a>
                         </div>
                         <div class="pricing-table__row">
                             <span class="pricing-table__service">Histeroskopia operacyjna</span>
                             <span class="pricing-table__price">od 3500 zł</span>
-                            <a href="rejestracja.html" class="btn btn--sm btn--primary">Umów</a>
+                            <a href="rejestracja.html" class="btn btn--primary btn--sm">Umów</a>
                         </div>
                         <div class="pricing-table__row">
                             <span class="pricing-table__service">Założenie wkładki IUD (Mirena)</span>
                             <span class="pricing-table__price">od 1200 zł</span>
-                            <a href="rejestracja.html" class="btn btn--sm btn--primary">Umów</a>
+                            <a href="rejestracja.html" class="btn btn--primary btn--sm">Umów</a>
                         </div>
                         <div class="pricing-table__row">
                             <span class="pricing-table__service">Założenie wkładki IUD (Kyleena)</span>
                             <span class="pricing-table__price">od 1200 zł</span>
-                            <a href="rejestracja.html" class="btn btn--sm btn--primary">Umów</a>
+                            <a href="rejestracja.html" class="btn btn--primary btn--sm">Umów</a>
                         </div>
                         <div class="pricing-table__row">
                             <span class="pricing-table__service">Założenie implantu podskórnego</span>
                             <span class="pricing-table__price">od 1500 zł</span>
-                            <a href="rejestracja.html" class="btn btn--sm btn--primary">Umów</a>
+                            <a href="rejestracja.html" class="btn btn--primary btn--sm">Umów</a>
                         </div>
                     </div>
                 </div>
 
                 <!-- GINEKOLOGIA ESTETYCZNA -->
-                <div class="tabs__panel" role="tabpanel" id="panel-estetyczna" aria-labelledby="tab-estetyczna" data-panel="estetyczna" hidden>
-                    <h2 class="tabs__panel-title">Ginekologia estetyczna</h2>
+                <div class="tab-panel" role="tabpanel" id="panel-estetyczna" aria-labelledby="tab-estetyczna" data-tab-panel="estetyczna" hidden>
+                    <h2 class="tab-panel__title">Ginekologia estetyczna</h2>
                     <div class="pricing-table">
                         <div class="pricing-table__header">
                             <span class="pricing-table__col pricing-table__col--service">Usługa</span>
@@ -201,44 +197,44 @@
                         <div class="pricing-table__row">
                             <span class="pricing-table__service">Terapia HIFU</span>
                             <span class="pricing-table__price">od 3000 zł</span>
-                            <a href="rejestracja.html" class="btn btn--sm btn--primary">Umów</a>
+                            <a href="rejestracja.html" class="btn btn--primary btn--sm">Umów</a>
                         </div>
                         <div class="pricing-table__row">
                             <span class="pricing-table__service">Labioplastyka</span>
                             <span class="pricing-table__price">od 4000 zł</span>
-                            <a href="rejestracja.html" class="btn btn--sm btn--primary">Umów</a>
+                            <a href="rejestracja.html" class="btn btn--primary btn--sm">Umów</a>
                         </div>
                         <div class="pricing-table__row">
                             <span class="pricing-table__service">G-Shot</span>
                             <span class="pricing-table__price">od 1500 zł</span>
-                            <a href="rejestracja.html" class="btn btn--sm btn--primary">Umów</a>
+                            <a href="rejestracja.html" class="btn btn--primary btn--sm">Umów</a>
                         </div>
                         <div class="pricing-table__row">
                             <span class="pricing-table__service">O-Shot</span>
                             <span class="pricing-table__price">od 1500 zł</span>
-                            <a href="rejestracja.html" class="btn btn--sm btn--primary">Umów</a>
+                            <a href="rejestracja.html" class="btn btn--primary btn--sm">Umów</a>
                         </div>
                         <div class="pricing-table__row">
                             <span class="pricing-table__service">Kwas hialuronowy wargi sromowe</span>
                             <span class="pricing-table__price">od 2500 zł</span>
-                            <a href="rejestracja.html" class="btn btn--sm btn--primary">Umów</a>
+                            <a href="rejestracja.html" class="btn btn--primary btn--sm">Umów</a>
                         </div>
                         <div class="pricing-table__row">
                             <span class="pricing-table__service">Rewitalizacja PRP</span>
                             <span class="pricing-table__price">od 1200 zł</span>
-                            <a href="rejestracja.html" class="btn btn--sm btn--primary">Umów</a>
+                            <a href="rejestracja.html" class="btn btn--primary btn--sm">Umów</a>
                         </div>
                         <div class="pricing-table__row">
                             <span class="pricing-table__service">Plastyka krocza</span>
                             <span class="pricing-table__price">od 4000 zł</span>
-                            <a href="rejestracja.html" class="btn btn--sm btn--primary">Umów</a>
+                            <a href="rejestracja.html" class="btn btn--primary btn--sm">Umów</a>
                         </div>
                     </div>
                 </div>
 
                 <!-- PROFILAKTYKA -->
-                <div class="tabs__panel" role="tabpanel" id="panel-profilaktyka" aria-labelledby="tab-profilaktyka" data-panel="profilaktyka" hidden>
-                    <h2 class="tabs__panel-title">Profilaktyka</h2>
+                <div class="tab-panel" role="tabpanel" id="panel-profilaktyka" aria-labelledby="tab-profilaktyka" data-tab-panel="profilaktyka" hidden>
+                    <h2 class="tab-panel__title">Profilaktyka</h2>
                     <div class="pricing-table">
                         <div class="pricing-table__header">
                             <span class="pricing-table__col pricing-table__col--service">Usługa</span>
@@ -248,34 +244,34 @@
                         <div class="pricing-table__row">
                             <span class="pricing-table__service">Test HPV</span>
                             <span class="pricing-table__price">od 250 zł</span>
-                            <a href="rejestracja.html" class="btn btn--sm btn--primary">Umów</a>
+                            <a href="rejestracja.html" class="btn btn--primary btn--sm">Umów</a>
                         </div>
                         <div class="pricing-table__row">
                             <span class="pricing-table__service">Cytologia LBC</span>
                             <span class="pricing-table__price">od 150 zł</span>
-                            <a href="rejestracja.html" class="btn btn--sm btn--primary">Umów</a>
+                            <a href="rejestracja.html" class="btn btn--primary btn--sm">Umów</a>
                         </div>
                         <div class="pricing-table__row">
                             <span class="pricing-table__service">Kolposkopia</span>
                             <span class="pricing-table__price">od 300 zł</span>
-                            <a href="rejestracja.html" class="btn btn--sm btn--primary">Umów</a>
+                            <a href="rejestracja.html" class="btn btn--primary btn--sm">Umów</a>
                         </div>
                         <div class="pricing-table__row">
                             <span class="pricing-table__service">Konizacja LEEP/LLETZ</span>
                             <span class="pricing-table__price">od 2500 zł</span>
-                            <a href="rejestracja.html" class="btn btn--sm btn--primary">Umów</a>
+                            <a href="rejestracja.html" class="btn btn--primary btn--sm">Umów</a>
                         </div>
                         <div class="pricing-table__row">
                             <span class="pricing-table__service">Szczepienie HPV Gardasil 9</span>
                             <span class="pricing-table__price">od 800 zł/dawka</span>
-                            <a href="rejestracja.html" class="btn btn--sm btn--primary">Umów</a>
+                            <a href="rejestracja.html" class="btn btn--primary btn--sm">Umów</a>
                         </div>
                     </div>
                 </div>
 
                 <!-- NIEPŁODNOŚĆ -->
-                <div class="tabs__panel" role="tabpanel" id="panel-nieplodnosc" aria-labelledby="tab-nieplodnosc" data-panel="nieplodnosc" hidden>
-                    <h2 class="tabs__panel-title">Niepłodność</h2>
+                <div class="tab-panel" role="tabpanel" id="panel-nieplodnosc" aria-labelledby="tab-nieplodnosc" data-tab-panel="nieplodnosc" hidden>
+                    <h2 class="tab-panel__title">Niepłodność</h2>
                     <div class="pricing-table">
                         <div class="pricing-table__header">
                             <span class="pricing-table__col pricing-table__col--service">Usługa</span>
@@ -285,29 +281,29 @@
                         <div class="pricing-table__row">
                             <span class="pricing-table__service">Konsultacja ws. niepłodności</span>
                             <span class="pricing-table__price">od 300 zł</span>
-                            <a href="rejestracja.html" class="btn btn--sm btn--primary">Umów</a>
+                            <a href="rejestracja.html" class="btn btn--primary btn--sm">Umów</a>
                         </div>
                         <div class="pricing-table__row">
                             <span class="pricing-table__service">Diagnostyka hormonalna</span>
                             <span class="pricing-table__price">od 300 zł</span>
-                            <a href="rejestracja.html" class="btn btn--sm btn--primary">Umów</a>
+                            <a href="rejestracja.html" class="btn btn--primary btn--sm">Umów</a>
                         </div>
                         <div class="pricing-table__row">
                             <span class="pricing-table__service">HyFoSy</span>
                             <span class="pricing-table__price">od 1500 zł</span>
-                            <a href="rejestracja.html" class="btn btn--sm btn--primary">Umów</a>
+                            <a href="rejestracja.html" class="btn btn--primary btn--sm">Umów</a>
                         </div>
                         <div class="pricing-table__row">
                             <span class="pricing-table__service">Monitorowanie owulacji</span>
                             <span class="pricing-table__price">od 200 zł/wizyta</span>
-                            <a href="rejestracja.html" class="btn btn--sm btn--primary">Umów</a>
+                            <a href="rejestracja.html" class="btn btn--primary btn--sm">Umów</a>
                         </div>
                     </div>
                 </div>
 
                 <!-- CIĄŻA I PORÓD -->
-                <div class="tabs__panel" role="tabpanel" id="panel-ciaza" aria-labelledby="tab-ciaza" data-panel="ciaza" hidden>
-                    <h2 class="tabs__panel-title">Ciąża i poród</h2>
+                <div class="tab-panel" role="tabpanel" id="panel-ciaza" aria-labelledby="tab-ciaza" data-tab-panel="ciaza" hidden>
+                    <h2 class="tab-panel__title">Ciąża i poród</h2>
                     <div class="pricing-table">
                         <div class="pricing-table__header">
                             <span class="pricing-table__col pricing-table__col--service">Usługa</span>
@@ -317,29 +313,29 @@
                         <div class="pricing-table__row">
                             <span class="pricing-table__service">Wizyta położnicza z USG</span>
                             <span class="pricing-table__price">od 300 zł</span>
-                            <a href="rejestracja.html" class="btn btn--sm btn--primary">Umów</a>
+                            <a href="rejestracja.html" class="btn btn--primary btn--sm">Umów</a>
                         </div>
                         <div class="pricing-table__row">
                             <span class="pricing-table__service">Badanie KTG</span>
                             <span class="pricing-table__price">od 100 zł</span>
-                            <a href="rejestracja.html" class="btn btn--sm btn--primary">Umów</a>
+                            <a href="rejestracja.html" class="btn btn--primary btn--sm">Umów</a>
                         </div>
                         <div class="pricing-table__row">
                             <span class="pricing-table__service">Konsultacja z położną</span>
                             <span class="pricing-table__price">od 150 zł</span>
-                            <a href="rejestracja.html" class="btn btn--sm btn--primary">Umów</a>
+                            <a href="rejestracja.html" class="btn btn--primary btn--sm">Umów</a>
                         </div>
                         <div class="pricing-table__row">
                             <span class="pricing-table__service">Kurs przedporodowy indywidualny</span>
                             <span class="pricing-table__price">od 500 zł</span>
-                            <a href="rejestracja.html" class="btn btn--sm btn--primary">Umów</a>
+                            <a href="rejestracja.html" class="btn btn--primary btn--sm">Umów</a>
                         </div>
                     </div>
                 </div>
 
                 <!-- PRENATALNE -->
-                <div class="tabs__panel" role="tabpanel" id="panel-prenatalne" aria-labelledby="tab-prenatalne" data-panel="prenatalne" hidden>
-                    <h2 class="tabs__panel-title">Badania prenatalne</h2>
+                <div class="tab-panel" role="tabpanel" id="panel-prenatalne" aria-labelledby="tab-prenatalne" data-tab-panel="prenatalne" hidden>
+                    <h2 class="tab-panel__title">Badania prenatalne</h2>
                     <div class="pricing-table">
                         <div class="pricing-table__header">
                             <span class="pricing-table__col pricing-table__col--service">Usługa</span>
@@ -349,29 +345,29 @@
                         <div class="pricing-table__row">
                             <span class="pricing-table__service">USG genetyczne I trymestru</span>
                             <span class="pricing-table__price">od 400 zł</span>
-                            <a href="rejestracja.html" class="btn btn--sm btn--primary">Umów</a>
+                            <a href="rejestracja.html" class="btn btn--primary btn--sm">Umów</a>
                         </div>
                         <div class="pricing-table__row">
                             <span class="pricing-table__service">Test wolnego DNA płodu</span>
                             <span class="pricing-table__price">od 1800 zł</span>
-                            <a href="rejestracja.html" class="btn btn--sm btn--primary">Umów</a>
+                            <a href="rejestracja.html" class="btn btn--primary btn--sm">Umów</a>
                         </div>
                         <div class="pricing-table__row">
                             <span class="pricing-table__service">USG II trymestru</span>
                             <span class="pricing-table__price">od 350 zł</span>
-                            <a href="rejestracja.html" class="btn btn--sm btn--primary">Umów</a>
+                            <a href="rejestracja.html" class="btn btn--primary btn--sm">Umów</a>
                         </div>
                         <div class="pricing-table__row">
                             <span class="pricing-table__service">USG III trymestru</span>
                             <span class="pricing-table__price">od 300 zł</span>
-                            <a href="rejestracja.html" class="btn btn--sm btn--primary">Umów</a>
+                            <a href="rejestracja.html" class="btn btn--primary btn--sm">Umów</a>
                         </div>
                     </div>
                 </div>
 
                 <!-- FIZJOTERAPIA -->
-                <div class="tabs__panel" role="tabpanel" id="panel-fizjoterapia" aria-labelledby="tab-fizjoterapia" data-panel="fizjoterapia" hidden>
-                    <h2 class="tabs__panel-title">Fizjoterapia</h2>
+                <div class="tab-panel" role="tabpanel" id="panel-fizjoterapia" aria-labelledby="tab-fizjoterapia" data-tab-panel="fizjoterapia" hidden>
+                    <h2 class="tab-panel__title">Fizjoterapia</h2>
                     <div class="pricing-table">
                         <div class="pricing-table__header">
                             <span class="pricing-table__col pricing-table__col--service">Usługa</span>
@@ -381,24 +377,24 @@
                         <div class="pricing-table__row">
                             <span class="pricing-table__service">Fizjoterapia uroginekologiczna</span>
                             <span class="pricing-table__price">od 200 zł</span>
-                            <a href="rejestracja.html" class="btn btn--sm btn--primary">Umów</a>
+                            <a href="rejestracja.html" class="btn btn--primary btn--sm">Umów</a>
                         </div>
                         <div class="pricing-table__row">
                             <span class="pricing-table__service">Fizjoterapia w ciąży</span>
                             <span class="pricing-table__price">od 200 zł</span>
-                            <a href="rejestracja.html" class="btn btn--sm btn--primary">Umów</a>
+                            <a href="rejestracja.html" class="btn btn--primary btn--sm">Umów</a>
                         </div>
                         <div class="pricing-table__row">
                             <span class="pricing-table__service">Fizjoterapia poporodowa</span>
                             <span class="pricing-table__price">od 200 zł</span>
-                            <a href="rejestracja.html" class="btn btn--sm btn--primary">Umów</a>
+                            <a href="rejestracja.html" class="btn btn--primary btn--sm">Umów</a>
                         </div>
                     </div>
                 </div>
 
                 <!-- INNE -->
-                <div class="tabs__panel" role="tabpanel" id="panel-inne" aria-labelledby="tab-inne" data-panel="inne" hidden>
-                    <h2 class="tabs__panel-title">Inne usługi</h2>
+                <div class="tab-panel" role="tabpanel" id="panel-inne" aria-labelledby="tab-inne" data-tab-panel="inne" hidden>
+                    <h2 class="tab-panel__title">Inne usługi</h2>
                     <div class="pricing-table">
                         <div class="pricing-table__header">
                             <span class="pricing-table__col pricing-table__col--service">Usługa</span>
@@ -408,33 +404,33 @@
                         <div class="pricing-table__row">
                             <span class="pricing-table__service">Konsultacja endokrynologiczna</span>
                             <span class="pricing-table__price">od 300 zł</span>
-                            <a href="rejestracja.html" class="btn btn--sm btn--primary">Umów</a>
+                            <a href="rejestracja.html" class="btn btn--primary btn--sm">Umów</a>
                         </div>
                         <div class="pricing-table__row">
                             <span class="pricing-table__service">Konsultacja kardiologiczna</span>
                             <span class="pricing-table__price">od 300 zł</span>
-                            <a href="rejestracja.html" class="btn btn--sm btn--primary">Umów</a>
+                            <a href="rejestracja.html" class="btn btn--primary btn--sm">Umów</a>
                         </div>
                         <div class="pricing-table__row">
                             <span class="pricing-table__service">Konsultacja psychologiczna/seksuologiczna</span>
                             <span class="pricing-table__price">od 250 zł</span>
-                            <a href="rejestracja.html" class="btn btn--sm btn--primary">Umów</a>
+                            <a href="rejestracja.html" class="btn btn--primary btn--sm">Umów</a>
                         </div>
                         <div class="pricing-table__row">
                             <span class="pricing-table__service">Wlew żelaza (Ferinject)</span>
                             <span class="pricing-table__price">od 400 zł</span>
-                            <a href="rejestracja.html" class="btn btn--sm btn--primary">Umów</a>
+                            <a href="rejestracja.html" class="btn btn--primary btn--sm">Umów</a>
                         </div>
                         <div class="pricing-table__row">
                             <span class="pricing-table__service">Diagnostyka menopauzy</span>
                             <span class="pricing-table__price">od 400 zł</span>
-                            <a href="rejestracja.html" class="btn btn--sm btn--primary">Umów</a>
+                            <a href="rejestracja.html" class="btn btn--primary btn--sm">Umów</a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Disclaimer -->
-                <p class="pricing__disclaimer">
+                <p class="pricing-disclaimer">
                     <i class="fas fa-info-circle"></i>
                     Ceny orientacyjne. Dokładna wycena po konsultacji.
                 </p>
@@ -443,11 +439,11 @@
         </section>
 
         <!-- ===== CTA SECTION ===== -->
-        <section class="cta">
-            <div class="container cta__inner">
-                <h2 class="cta__title">Umów wizytę</h2>
-                <p class="cta__text">Zarezerwuj termin online lub zadzwoń do nas. Nasz zespół jest do Twojej dyspozycji.</p>
-                <div class="cta__buttons">
+        <section class="cta-section">
+            <div class="container cta-section__inner">
+                <h2 class="cta-section__title">Umów wizytę</h2>
+                <p class="cta-section__text">Zarezerwuj termin online lub zadzwoń do nas. Nasz zespół jest do Twojej dyspozycji.</p>
+                <div class="cta-section__buttons">
                     <a href="rejestracja.html" class="btn btn--white btn--lg">Rezerwacja online</a>
                     <a href="tel:+48533343046" class="btn btn--outline-white btn--lg">
                         <i class="fas fa-phone-alt"></i> +48 533 343 046
@@ -457,68 +453,68 @@
         </section>
 
         <!-- ===== FAQ SECTION ===== -->
-        <section class="faq" id="faq">
+        <section class="faq-section" id="faq">
             <div class="container">
                 <h2 class="section-title">Najczęściej zadawane pytania</h2>
                 <p class="section-subtitle">Odpowiedzi na pytania dotyczące cennika i płatności</p>
 
-                <div class="faq__list">
-                    <details class="faq__item">
-                        <summary class="faq__question">
+                <div class="faq-list">
+                    <details class="faq-item">
+                        <summary class="faq-question">
                             <span>Dlaczego ceny podane są jako „od"?</span>
-                            <i class="fas fa-chevron-down faq__icon"></i>
+                            <i class="fas fa-chevron-down faq-icon"></i>
                         </summary>
-                        <div class="faq__answer">
+                        <div class="faq-answer">
                             <p>Ceny podane na stronie są cenami orientacyjnymi. Ostateczny koszt usługi zależy od indywidualnego przypadku, zakresu badań i zastosowanych materiałów. Dokładną wycenę otrzymasz po konsultacji z lekarzem.</p>
                         </div>
                     </details>
 
-                    <details class="faq__item">
-                        <summary class="faq__question">
+                    <details class="faq-item">
+                        <summary class="faq-question">
                             <span>Jakie formy płatności akceptujecie?</span>
-                            <i class="fas fa-chevron-down faq__icon"></i>
+                            <i class="fas fa-chevron-down faq-icon"></i>
                         </summary>
-                        <div class="faq__answer">
+                        <div class="faq-answer">
                             <p>Akceptujemy płatności gotówką, kartą płatniczą oraz BLIK. Dla wybranych zabiegów możliwe są również płatności ratalne.</p>
                         </div>
                     </details>
 
-                    <details class="faq__item">
-                        <summary class="faq__question">
+                    <details class="faq-item">
+                        <summary class="faq-question">
                             <span>Czy mogę rozłożyć płatność na raty?</span>
-                            <i class="fas fa-chevron-down faq__icon"></i>
+                            <i class="fas fa-chevron-down faq-icon"></i>
                         </summary>
-                        <div class="faq__answer">
+                        <div class="faq-answer">
                             <p>Tak, dla zabiegów o wyższej wartości (np. ginekologia estetyczna, histeroskopia) oferujemy możliwość rozłożenia płatności na raty. Szczegóły ustalisz w recepcji kliniki.</p>
                         </div>
                     </details>
 
-                    <details class="faq__item">
-                        <summary class="faq__question">
+                    <details class="faq-item">
+                        <summary class="faq-question">
                             <span>Czy wystawiacie faktury?</span>
-                            <i class="fas fa-chevron-down faq__icon"></i>
+                            <i class="fas fa-chevron-down faq-icon"></i>
                         </summary>
-                        <div class="faq__answer">
+                        <div class="faq-answer">
                             <p>Tak, na życzenie pacjentki wystawiamy faktury VAT. Prosimy o zgłoszenie chęci otrzymania faktury przed dokonaniem płatności.</p>
                         </div>
                     </details>
 
-                    <details class="faq__item">
-                        <summary class="faq__question">
+                    <details class="faq-item">
+                        <summary class="faq-question">
                             <span>Czy pierwsza wizyta jest droższa?</span>
-                            <i class="fas fa-chevron-down faq__icon"></i>
+                            <i class="fas fa-chevron-down faq-icon"></i>
                         </summary>
-                        <div class="faq__answer">
+                        <div class="faq-answer">
                             <p>Nie, cena pierwszej wizyty jest taka sama jak wizyty kontrolnej. Podczas pierwszej konsultacji lekarz poświęca więcej czasu na wywiad i diagnostykę, ale koszt pozostaje bez zmian.</p>
                         </div>
                     </details>
 
-                    <details class="faq__item">
-                        <summary class="faq__question">
+                    <details class="faq-item">
+                        <summary class="faq-question">
                             <span>Czy mogę odwołać wizytę bezpłatnie?</span>
-                            <i class="fas fa-chevron-down faq__icon"></i>
+                            <i class="fas fa-chevron-down faq-icon"></i>
                         </summary>
-                        <div class="faq__answer">
+                        <div class="faq-answer">
                             <p>Tak, wizytę można odwołać bezpłatnie z co najmniej 24-godzinnym wyprzedzeniem. W przypadku późniejszego odwołania lub niestawienia się na wizytę może zostać naliczona opłata.</p>
                         </div>
                     </details>
@@ -531,12 +527,10 @@
     <!-- ===== FOOTER ===== -->
     <footer class="footer">
         <div class="container">
-            <div class="footer__grid">
+            <div class="footer__inner">
                 <div class="footer__col">
-                    <a href="index.html" class="footer__logo">
-                        <img src="https://femimea.pl/wp-content/uploads/2022/11/femimea-logo.png" alt="FemiMea" width="160" height="42">
-                    </a>
-                    <p class="footer__desc">Klinika zdrowia kobiet. Kompleksowa opieka ginekologiczna i położnicza na najwyższym poziomie.</p>
+                    <img src="https://femimea.pl/wp-content/uploads/2022/11/femimea-logo.png" alt="FemiMea" class="footer__logo" width="160" height="42">
+                    <p class="footer__about">Klinika zdrowia kobiet. Kompleksowa opieka ginekologiczna i położnicza na najwyższym poziomie.</p>
                     <div class="footer__social">
                         <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
@@ -564,24 +558,17 @@
                 </div>
                 <div class="footer__col">
                     <h3 class="footer__heading">Kontakt</h3>
-                    <ul class="footer__contact">
-                        <li>
-                            <i class="fas fa-phone-alt"></i>
-                            <a href="tel:+48533343046">+48 533 343 046</a>
-                        </li>
-                        <li>
-                            <i class="fas fa-envelope"></i>
-                            <a href="mailto:kontakt@femimea.pl">kontakt@femimea.pl</a>
-                        </li>
-                    </ul>
+                    <div class="footer__contact">
+                        <p><i class="fas fa-phone-alt"></i> <a href="tel:+48533343046">+48 533 343 046</a></p>
+                        <p><i class="fas fa-envelope"></i> <a href="mailto:kontakt@femimea.pl">kontakt@femimea.pl</a></p>
+                    </div>
                 </div>
             </div>
             <div class="footer__bottom">
-                <p>&copy; 2026 FemiMea. Wszelkie prawa zastrzeżone.</p>
-                <div class="footer__legal">
-                    <a href="polityka-prywatnosci.html">Polityka prywatności</a>
+                <p>&copy; 2026 FemiMea. Wszelkie prawa zastrzeżone. |
+                    <a href="polityka-prywatnosci.html">Polityka prywatności</a> |
                     <a href="regulamin.html">Regulamin</a>
-                </div>
+                </p>
             </div>
         </div>
     </footer>

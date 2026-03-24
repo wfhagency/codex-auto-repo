@@ -12,8 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
      ========================================================================== */
 
   const MobileNav = (() => {
-    const toggle = document.querySelector('.nav-toggle, .hamburger');
-    const menu = document.querySelector('.mobile-menu, .nav-mobile');
+    const toggle = document.querySelector('.nav-toggle, .hamburger, .header__hamburger');
+    const menu = document.querySelector('.mobile-menu, .nav-mobile, .header__nav');
     const overlay = document.querySelector('.nav-overlay');
     const closeBtn = document.querySelector('.nav-close, .mobile-menu-close');
     const body = document.body;
@@ -21,16 +21,16 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!toggle || !menu) return null;
 
     const open = () => {
-      menu.classList.add('is-active');
-      toggle.classList.add('is-active');
+      menu.classList.add('is-active', 'open');
+      toggle.classList.add('is-active', 'open');
       toggle.setAttribute('aria-expanded', 'true');
       body.classList.add('no-scroll');
       if (overlay) overlay.classList.add('is-visible');
     };
 
     const close = () => {
-      menu.classList.remove('is-active');
-      toggle.classList.remove('is-active');
+      menu.classList.remove('is-active', 'open');
+      toggle.classList.remove('is-active', 'open');
       toggle.setAttribute('aria-expanded', 'false');
       body.classList.remove('no-scroll');
       if (overlay) overlay.classList.remove('is-visible');
@@ -569,7 +569,7 @@ document.addEventListener('DOMContentLoaded', () => {
     homeLi.setAttribute('itemprop', 'itemListElement');
     homeLi.setAttribute('itemscope', '');
     homeLi.setAttribute('itemtype', 'https://schema.org/ListItem');
-    homeLi.innerHTML = `<a itemprop="item" href="/"><span itemprop="name">Accueil</span></a><meta itemprop="position" content="1">`;
+    homeLi.innerHTML = `<a itemprop="item" href="/"><span itemprop="name">Strona główna</span></a><meta itemprop="position" content="1">`;
     ol.appendChild(homeLi);
 
     // Build remaining crumbs
@@ -639,25 +639,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // Required check
       if (field.hasAttribute('required') && !value) {
-        showError(field, 'Ce champ est requis.');
+        showError(field, 'To pole jest wymagane.');
         return false;
       }
 
       // Email check
       if (field.type === 'email' && value && !patterns.email.test(value)) {
-        showError(field, 'Veuillez entrer une adresse email valide.');
+        showError(field, 'Proszę podać prawidłowy adres email.');
         return false;
       }
 
       // Phone check
       if (field.type === 'tel' && value && !patterns.phone.test(value)) {
-        showError(field, 'Veuillez entrer un numero de telephone valide.');
+        showError(field, 'Proszę podać prawidłowy numer telefonu.');
         return false;
       }
 
       // Min length
       if (field.minLength > 0 && value.length < field.minLength) {
-        showError(field, `Minimum ${field.minLength} caracteres requis.`);
+        showError(field, `Wymagane minimum ${field.minLength} znaków.`);
         return false;
       }
 
@@ -709,7 +709,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     tabContainers.forEach((container) => {
       const triggers = container.querySelectorAll('.tab-trigger, [data-tab]');
-      const panels = container.querySelectorAll('.tab-panel, [data-tab-panel]');
+      // Look for panels inside the container first, then fall back to parent scope
+      let panels = container.querySelectorAll('.tab-panel, [data-tab-panel]');
+      if (!panels.length && container.parentElement) {
+        panels = container.parentElement.querySelectorAll('.tab-panel, [data-tab-panel]');
+      }
 
       if (!triggers.length || !panels.length) return;
 
@@ -834,7 +838,7 @@ document.addEventListener('DOMContentLoaded', () => {
           lightboxModal.innerHTML = `
             <div class="modal-overlay"></div>
             <div class="modal-content lightbox-content">
-              <button class="modal-close lightbox-close" aria-label="Fermer">&times;</button>
+              <button class="modal-close lightbox-close" aria-label="Zamknij">&times;</button>
               <img class="lightbox-img" src="" alt="">
             </div>`;
           document.body.appendChild(lightboxModal);
@@ -878,17 +882,17 @@ document.addEventListener('DOMContentLoaded', () => {
       banner = document.createElement('div');
       banner.classList.add('cookie-banner');
       banner.setAttribute('role', 'dialog');
-      banner.setAttribute('aria-label', 'Consentement aux cookies');
+      banner.setAttribute('aria-label', 'Zgoda na pliki cookies');
       banner.innerHTML = `
         <div class="cookie-banner-inner">
           <p class="cookie-banner-text">
-            Nous utilisons des cookies pour ameliorer votre experience sur notre site.
-            En continuant, vous acceptez notre
-            <a href="/politique-de-confidentialite">politique de confidentialite</a>.
+            Używamy plików cookies, aby zapewnić najlepsze doświadczenie na naszej stronie.
+            Kontynuując, akceptujesz naszą
+            <a href="/polityka-prywatnosci">politykę prywatności</a>.
           </p>
           <div class="cookie-banner-actions">
-            <button class="cookie-accept btn btn-primary" data-cookie-accept>Accepter</button>
-            <button class="cookie-decline btn btn-outline" data-cookie-decline>Refuser</button>
+            <button class="cookie-accept btn btn-primary" data-cookie-accept>Akceptuję</button>
+            <button class="cookie-decline btn btn-outline" data-cookie-decline>Odmawiam</button>
           </div>
         </div>`;
       document.body.appendChild(banner);

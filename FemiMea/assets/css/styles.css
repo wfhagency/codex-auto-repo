@@ -470,3 +470,240 @@ address { font-style: normal; }
   .service-card__actions { flex-direction: column; }
   .service-card__actions .btn { width: 100%; }
 }
+
+/* ============================================================
+   SECTION TITLES (shared)
+   ============================================================ */
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  color: #333;
+  margin-bottom: 8px;
+}
+.section-subtitle {
+  font-size: 1.05rem;
+  color: #6b7280;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+/* ============================================================
+   OUTLINE-WHITE BUTTON VARIANT
+   ============================================================ */
+.btn--outline-white {
+  background: transparent;
+  color: #fff;
+  border-color: #fff;
+}
+.btn--outline-white:hover {
+  background: #fff;
+  color: #DF3BA3;
+}
+
+/* ============================================================
+   TAB COMPONENT – Pricing page
+   ============================================================ */
+.tab-trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: inherit;
+  font-size: .88rem;
+  font-weight: 500;
+  padding: 10px 22px;
+  background: #f8f8fa;
+  color: #54595F;
+  border: 2px solid #e0e0e0;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+.tab-trigger:hover {
+  border-color: #DF3BA3;
+  color: #DF3BA3;
+  background: #fff;
+}
+.tab-trigger.is-active {
+  background: #DF3BA3;
+  color: #fff;
+  border-color: #DF3BA3;
+  box-shadow: 0 4px 14px rgba(223,59,163,.3);
+}
+.tabs[data-tabs] {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+/* Tab panels */
+.tab-panel {
+  display: none;
+  animation: tabFadeIn .4s ease;
+}
+.tab-panel.is-active {
+  display: block;
+}
+@keyframes tabFadeIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.tab-panel__title {
+  font-size: 1.45rem;
+  font-weight: 600;
+  color: #DF3BA3;
+  margin-bottom: 24px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid rgba(223,59,163,.18);
+}
+
+/* ============================================================
+   PRICING SECTION & TABLE
+   ============================================================ */
+.pricing-section {
+  padding: 72px 0 48px;
+}
+
+.pricing-table {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 4px 16px rgba(0,0,0,.08);
+  overflow: hidden;
+}
+
+.pricing-table__header {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 16px;
+  align-items: center;
+  padding: 16px 28px;
+  background: #f8f8fa;
+  border-bottom: 2px solid #e8e8ec;
+  font-size: .8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  color: #6b7280;
+}
+
+.pricing-table__row {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 16px;
+  align-items: center;
+  padding: 18px 28px;
+  border-bottom: 1px solid #eef0f3;
+  transition: background .25s;
+}
+.pricing-table__row:last-child { border-bottom: none; }
+.pricing-table__row:hover { background: rgba(223,59,163,.025); }
+
+.pricing-table__service {
+  font-size: .95rem;
+  font-weight: 500;
+  color: #333;
+}
+.pricing-table__price {
+  font-size: .95rem;
+  font-weight: 700;
+  color: #DF3BA3;
+  white-space: nowrap;
+}
+
+/* Disclaimer */
+.pricing-disclaimer {
+  margin-top: 32px;
+  text-align: center;
+  font-size: .9rem;
+  color: #6b7280;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 16px 24px;
+  background: #f8f8fa;
+  border-radius: 10px;
+  border: 1px solid #e8e8ec;
+}
+.pricing-disclaimer i { color: #0CB8B6; }
+
+/* ============================================================
+   FAQ SECTION
+   ============================================================ */
+.faq-section {
+  padding: 80px 0;
+  background: #f8f8fa;
+}
+.faq-list {
+  max-width: 780px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.faq-item {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0,0,0,.06);
+  border: 1px solid #e8e8ec;
+  overflow: hidden;
+  transition: box-shadow .3s;
+}
+.faq-item:hover { box-shadow: 0 4px 14px rgba(0,0,0,.1); }
+.faq-item[open] { border-color: rgba(223,59,163,.25); }
+
+.faq-question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 24px;
+  font-weight: 600;
+  font-size: .95rem;
+  cursor: pointer;
+  color: #333;
+  user-select: none;
+  list-style: none;
+}
+.faq-question::-webkit-details-marker { display: none; }
+.faq-question::marker { content: ''; }
+
+.faq-icon {
+  font-size: .75rem;
+  color: #DF3BA3;
+  transition: transform .3s;
+  flex-shrink: 0;
+  margin-left: 16px;
+}
+.faq-item[open] .faq-icon { transform: rotate(180deg); }
+
+.faq-answer {
+  padding: 0 24px 20px;
+  font-size: .9rem;
+  color: #6b7280;
+  line-height: 1.7;
+}
+
+/* ============================================================
+   PRICING PAGE – RESPONSIVE OVERRIDES
+   ============================================================ */
+@media (max-width: 768px) {
+  .tabs[data-tabs] { gap: 6px; }
+  .tab-trigger { font-size: .78rem; padding: 8px 14px; }
+  .pricing-table__header { display: none; }
+  .pricing-table__row {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    padding: 16px 20px;
+  }
+  .pricing-table__price { font-size: 1.05rem; }
+  .pricing-section { padding: 48px 0 32px; }
+  .section-title { font-size: 1.6rem; }
+}
+
+@media (max-width: 480px) {
+  .tab-trigger { font-size: .72rem; padding: 7px 12px; }
+  .tab-trigger i { display: none; }
+}
